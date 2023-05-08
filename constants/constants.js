@@ -14,7 +14,7 @@ export const headerVariants = {
   },
 };
 
-//Hero motion prooperties
+//Hero motion properties
 export const staggerHeroText = {
   animate: {
     transition: {
@@ -193,6 +193,64 @@ export const navbarVariants = {
   },
   exit: {
     scaleY: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+//bullet motion variants
+
+export const bulletVariants = {
+  hidden: {
+    scale: 0,
+  },
+  show: {
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+//layout motion variants
+
+export const layoutVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.25,
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0,
+    transition: {
+      duration: 0.25,
+    },
+  },
+};
+
+export const loaderVariants = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    opacity: 0,
+    x: -900,
     transition: {
       duration: 1,
     },
